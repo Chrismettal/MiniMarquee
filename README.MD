@@ -6,6 +6,8 @@ Small marquees for standalone decoration with backlit signs, including output fo
 Might be used for multiple consoles to have the specific sign and indirect strip lighting light up with the console.
 
 
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/PCB_render1.png "MiniMarqueev0.2render")
+
 ## Capabilities
 
 At the moment 10 light scenes can be hardcoded including static light ones and fading between 2 colors. The amount of light scenes and their values can be modified in the source. The same light scenes will be used for the backlight and the RGB strip output, but the two "zones" can be individually set to display a different scene to enable a contrast between the sign and indirect lighting. A single button steps through the light scenes for the specific zones. The current light scene is always saved in EEPROM to stay persistent between power cycles.
