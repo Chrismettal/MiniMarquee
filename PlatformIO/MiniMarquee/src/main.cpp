@@ -1,16 +1,35 @@
+//https://github.com/Chrismettal/MiniMarquee
+
+
+//Version controlling, uncomment to use the older v0.1 PCB revision
+//#define PCB_v0_1
+
 #include <Arduino.h>
 #include <OneButton.h>
-#include <SoftPWM.h>
 #include <EEPROM.h>
 
+#ifdef PCB_v0_1
+  #include <SoftPWM.h>
+#endif
+
 /****************************Variables*********************************/
+#ifdef PCB_v0_1
 //pin assignments for v0.1 with soft pwm
-const byte pin_z0_R      = 3;
-const byte pin_z0_G      = 4;
-const byte pin_z0_B      = 2;
-const byte pin_z1_R      = 5;
-const byte pin_z1_G      = 6;
-const byte pin_z1_B      = 7;
+  const byte pin_z0_R      = 3;
+  const byte pin_z0_G      = 4;
+  const byte pin_z0_B      = 2;
+  const byte pin_z1_R      = 5;
+  const byte pin_z1_G      = 6;
+  const byte pin_z1_B      = 7;
+#else
+//pin assignments for v0.2 without softpwm required
+  const byte pin_z0_R      = 9;
+  const byte pin_z0_G      = 10;
+  const byte pin_z0_B      = 11;
+  const byte pin_z1_R      = 3;
+  const byte pin_z1_G      = 5;
+  const byte pin_z1_B      = 6;
+#endif
 #define buttonPin A0
 
 //RGB analog values
@@ -370,7 +389,7 @@ void setup() {
   //bootup animation
   BootAnimation();
 
-  //read eeprom for saved light scenes
+  //read EEPROM for saved light scenes
   if(EEPROM.read(eeprom_addr_z0) > 0 && EEPROM.read(eeprom_addr_z0) < 11) {
     lightScene_Zone0 = EEPROM.read(eeprom_addr_z0);
   }
