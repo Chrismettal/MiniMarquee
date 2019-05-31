@@ -1,5 +1,3 @@
-# MiniMarquee v0.2
-
 ![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/Logo.png "MiniMarqueev0.2Logo")
 
 ## What is this?
