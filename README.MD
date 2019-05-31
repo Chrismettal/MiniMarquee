@@ -16,9 +16,9 @@ At the moment 10 light scenes can be hardcoded including static light ones and f
 
 All the files are open source. The gerber files as well as the KiCAD project files can be found to get the PCBs made. Alternatively you can just write me. 
 
-The case as well as all the signs need to be 3d printed. For the signs at least a 2-color extruder is required. I print all the parts in PETG because of the selection of transparent materials.
+The case as well as all the signs need to be 3d printed. For the signs at least a 2-color extruder is required. I print all the parts in PETG because of the selection of transparent materials. The lowermost part i print in white for case internal reflections but if you only have a dual extruder setup you can print the lower and upper parts both in black and the actual logo in your color of choice.
 
-Soldering requires some SMD capabilities.
+Soldering requires some SMD capabilities. The QFP32 chip is the hardest but with a bit of flux is actually quite doable.
 
 You don't need to change anything in the source if you are fine with the preconfigured lightscenes.
 All light scenes are hardcoded in the **LightSceneEvaluation()** function. See the commented examples to make your own scenes.
@@ -64,22 +64,6 @@ Designed signs vs. signs to design
 - [ ]  Dreamcast
 - [ ]  Atari 2600
 - [ ]  Jaguar
-
-
-## Lightscenes
-
-List of standard lightscenes
-
-- 1
-- 2
-- 3
-- 4
-- 5
-- 6
-- 7
-- 8
-- 9
-- Off
 
 
 ## Controls

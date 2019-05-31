@@ -6,3 +6,5 @@
 .gcc-flags.json
 /.vscode/*
 PlatformIO/MiniMarquee/.vscode/*
+PlatformIO/MiniMarquee/.vscode/c_cpp_properties.json
+PlatformIO/MiniMarquee/.vscode/launch.json
