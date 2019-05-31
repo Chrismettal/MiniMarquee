@@ -37,7 +37,7 @@ The device can be powered directly by a 12 V DC power supply. In my usecase the 
 ## Versions
 
 The current PCB version is v0.2.
-The source code **WILL BE** made to be adaptable to both v0.2 and v0.1 PCBs to use with the old revision of the PCB. By default v0.2 is defined in the software. You will have to uncomment the "#define PCB_v0_1" to use the code with the old PCB
+The source code is made to be adaptable to both v0.2 and v0.1 PCBs to use with the old revision of the PCB. By default v0.2 is defined in the software. You will have to uncomment the "#define PCB_v0_1" to use the code with the old v0.1 PCB version, should you happen to get your hands on one.
 
 
 ## Signs made
