@@ -60,6 +60,7 @@ unsigned long now = 0; //saves current milliseconds every loop cycle
 /****************************Evaluate light scenes***********************/
 void LightSceneEvaluation() {
   //Here you can set your own light scenes.
+  //Zone0 is internal backlight
   switch (lightScene_Zone0) {
     case 1:
       val_z0_R = 255;
@@ -127,6 +128,7 @@ void LightSceneEvaluation() {
     break;
 
   }
+  //Zone1 is external RGB LED strip
   switch (lightScene_Zone1) {
     case 1:
       val_z1_R = 255;
