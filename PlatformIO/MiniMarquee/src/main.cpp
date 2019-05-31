@@ -8,8 +8,14 @@
 #include <OneButton.h>
 #include <EEPROM.h>
 
+//Depending on PCB rev the analog outputs are either done with hardware PWM on v0.2 (analogWrite())
+//or with software PWM on v0.1 (SoftPwmSet())
+//This ifdef statement will replace all occurences of AnalogOut with the correct outputting function
 #ifdef PCB_v0_1
   #include <SoftPWM.h>
+  #define AnalogOut SoftPWMset
+#else
+  #define AnalogOut analogWrite
 #endif
 
 /****************************Variables*********************************/
@@ -222,33 +228,33 @@ void LightSceneEvaluation() {
 void BootAnimation() {
   //rapidly fade through the main colors
   for (byte i = 0; i < 255; i++) {
-    SoftPWMSet(pin_z0_R, i);
-    SoftPWMSet(pin_z1_G, i);
+    AnalogOut(pin_z0_R, i);
+    AnalogOut(pin_z1_G, i);
     delayMicroseconds(500);
   }
   for (byte i = 255; i > 0; i--) {
-    SoftPWMSet(pin_z0_R, i);
-    SoftPWMSet(pin_z1_G, i);
+    AnalogOut(pin_z0_R, i);
+    AnalogOut(pin_z1_G, i);
     delayMicroseconds(500);
   }
   for (byte i = 0; i < 255; i++) {
-    SoftPWMSet(pin_z0_G, i);
-    SoftPWMSet(pin_z1_B, i);
+    AnalogOut(pin_z0_G, i);
+    AnalogOut(pin_z1_B, i);
     delayMicroseconds(500);
   }
   for (byte i = 255; i > 0; i--) {
-    SoftPWMSet(pin_z0_G, i);
-    SoftPWMSet(pin_z1_B, i);
+    AnalogOut(pin_z0_G, i);
+    AnalogOut(pin_z1_B, i);
     delayMicroseconds(500);
   }
   for (byte i = 0; i < 255; i++) {
-    SoftPWMSet(pin_z0_B, i);
-    SoftPWMSet(pin_z1_R, i);
+    AnalogOut(pin_z0_B, i);
+    AnalogOut(pin_z1_R, i);
     delayMicroseconds(500);
   }
   for (byte i = 255; i > 0; i--) {
-    SoftPWMSet(pin_z0_B, i);
-    SoftPWMSet(pin_z1_R, i);
+    AnalogOut(pin_z0_B, i);
+    AnalogOut(pin_z1_R, i);
     delayMicroseconds(500);
   }
 }//end bootanimation
@@ -304,27 +310,27 @@ void changeActiveZone() {
 
     //zone 1 animation
     for (byte i = 0; i < 255; i++) {
-      SoftPWMSet(pin_z1_R, i);
+      AnalogOut(pin_z1_R, i);
       delayMicroseconds(500);
     }
     for (byte i = 0; i < 255; i++) {
-      SoftPWMSet(pin_z1_G, i);
+      AnalogOut(pin_z1_G, i);
       delayMicroseconds(500);
     }
     for (byte i = 0; i < 255; i++) {
-      SoftPWMSet(pin_z1_B, i);
+      AnalogOut(pin_z1_B, i);
       delayMicroseconds(500);
     }
     for (byte i = 255; i < 0; i--) {
-      SoftPWMSet(pin_z1_R, i);
+      AnalogOut(pin_z1_R, i);
       delayMicroseconds(500);
     }
     for (byte i = 255; i > 0; i--) {
-      SoftPWMSet(pin_z1_G, i);
+      AnalogOut(pin_z1_G, i);
       delayMicroseconds(500);
     }
     for (byte i = 255; i > 0; i--) {
-      SoftPWMSet(pin_z1_B, i);
+      AnalogOut(pin_z1_B, i);
       delayMicroseconds(500);
     }
 
@@ -334,27 +340,27 @@ void changeActiveZone() {
 
     //zone 1 animation
     for (byte i = 0; i < 255; i++) {
-      SoftPWMSet(pin_z0_R, i);
+      AnalogOut(pin_z0_R, i);
       delayMicroseconds(500);
     }
     for (byte i = 0; i < 255; i++) {
-      SoftPWMSet(pin_z0_G, i);
+      AnalogOut(pin_z0_G, i);
       delayMicroseconds(500);
     }
     for (byte i = 0; i < 255; i++) {
-      SoftPWMSet(pin_z0_B, i);
+      AnalogOut(pin_z0_B, i);
       delayMicroseconds(500);
     }
     for (byte i = 255; i < 0; i--) {
-      SoftPWMSet(pin_z0_R, i);
+      AnalogOut(pin_z0_R, i);
       delayMicroseconds(500);
     }
     for (byte i = 255; i > 0; i--) {
-      SoftPWMSet(pin_z0_G, i);
+      AnalogOut(pin_z0_G, i);
       delayMicroseconds(500);
     }
     for (byte i = 255; i > 0; i--) {
-      SoftPWMSet(pin_z0_B, i);
+      AnalogOut(pin_z0_B, i);
       delayMicroseconds(500);
     }
 
@@ -378,13 +384,17 @@ void setup() {
   button.setClickTicks(doubleClickduration);
   button.setPressTicks(longPressDuration);
 
-  SoftPWMBegin();
-  SoftPWMSet(pin_z0_R, 0);
-  SoftPWMSet(pin_z0_G, 0);
-  SoftPWMSet(pin_z0_B, 0);
-  SoftPWMSet(pin_z1_R, 0);
-  SoftPWMSet(pin_z1_G, 0);
-  SoftPWMSet(pin_z1_B, 0);
+  //start software PWM for old PCB rev
+  #ifdef PCB_v0_1
+    SoftPWMBegin();
+  #endif
+
+  AnalogOut(pin_z0_R, 0);
+  AnalogOut(pin_z0_G, 0);
+  AnalogOut(pin_z0_B, 0);
+  AnalogOut(pin_z1_R, 0);
+  AnalogOut(pin_z1_G, 0);
+  AnalogOut(pin_z1_B, 0);
 
   //bootup animation
   BootAnimation();
@@ -443,12 +453,12 @@ void loop() {
     if (out_val_z1_B > val_z1_B) out_val_z1_B--;
 
     //Output values to analog pins
-    SoftPWMSet(pin_z0_R, out_val_z0_R);
-    SoftPWMSet(pin_z0_G, out_val_z0_G);
-    SoftPWMSet(pin_z0_B, out_val_z0_B);
-    SoftPWMSet(pin_z1_R, out_val_z1_R);
-    SoftPWMSet(pin_z1_G, out_val_z1_G);
-    SoftPWMSet(pin_z1_B, out_val_z1_B);
+    AnalogOut(pin_z0_R, out_val_z0_R);
+    AnalogOut(pin_z0_G, out_val_z0_G);
+    AnalogOut(pin_z0_B, out_val_z0_B);
+    AnalogOut(pin_z1_R, out_val_z1_R);
+    AnalogOut(pin_z1_G, out_val_z1_G);
+    AnalogOut(pin_z1_B, out_val_z1_B);
 
   }//end interval
 
