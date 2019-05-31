@@ -1,5 +1,6 @@
 # MiniMarquee v0.2
 
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/Logo.png "MiniMarqueev0.2Logo")
 
 ## What is this?
 Small marquees for standalone decoration with backlit signs, including output for up to 25 W of RGB LED strip.
