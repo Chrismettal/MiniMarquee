@@ -220,7 +220,7 @@ void LightSceneEvaluation() {
       val_z1_B = 200;
     break;
 
-  }//end switches
+  }//end light scenes
 
 }//end LightSceneEvaluation
 
