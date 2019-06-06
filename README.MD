@@ -14,6 +14,8 @@ At the moment 10 light scenes can be hardcoded including static light ones and f
 
 ## DIY
 
+**Be sure to jump straight to the [Wiki](https://github.com/Chrismettal/MiniMarquee/wiki) for detailed build instructions**
+
 All the files are open source. The gerber files as well as the KiCAD project files can be found to get the PCBs made. Alternatively you can just write me. 
 
 The case as well as all the signs need to be 3d printed. For the signs at least a 2-color extruder is required. I print all the parts in PETG because of the selection of transparent materials. The lowermost part i print in white for case internal reflections but if you only have a dual extruder setup you can print the lower and upper parts both in black and the actual logo in your color of choice.
@@ -21,11 +23,11 @@ The case as well as all the signs need to be 3d printed. For the signs at least 
 Soldering requires some SMD capabilities. The QFP32 chip is the hardest but with a bit of flux is actually quite doable.
 
 You don't need to change anything in the source if you are fine with the preconfigured lightscenes.
-All light scenes are hardcoded in the **LightSceneEvaluation()** function. See the commented examples to make your own scenes.
+All light scenes are hardcoded in the **LightSceneEvaluation()** function. See the commented examples to make your own scenes. ALso check out the [light scene documentation](https://github.com/Chrismettal/MiniMarquee/wiki/Editing-lightscenes).
 I used [PlatformIO](https://platformio.org/) on Visual Studio Code for programming. You could upload the code with the Arduino IDE but i recommend giving PlatformIO a try as you won't have to deal with the libraries etc. yourself.
 An ICSP programmer is required to upload code to the board. I used a cheap UsbTiny device but you could use an *Arduino as ISP* for example.
 
-A detailed building guide can be found **HERE IN THE FUTURE**
+A detailed building guide can be found [here](https://github.com/Chrismettal/MiniMarquee/wiki/Build-guide).
 
 ## Power
 
