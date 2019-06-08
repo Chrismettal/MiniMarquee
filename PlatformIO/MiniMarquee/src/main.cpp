@@ -76,7 +76,7 @@ byte iFade_fast                   = 0;      //fading counter 0-255 zone 1
 bool fadeDirection_slow           = 0;      //fading direction of zone 0
 bool fadeDirection_fast           = 0;      //fading direction of zone 1
 const byte fadeIntervalms_slow    = 50;     //fade interval slow fade | sets the speed of the slow fading scenes
-const byte fadeIntervalms_fast    = 1;      //fade interval fast fade | sets the speed of the fast fading scenes
+const byte fadeIntervalms_fast    = 2;      //fade interval fast fade | sets the speed of the fast fading scenes
 
 //other variables
 unsigned long now = 0; //saves current milliseconds every loop cycle
@@ -404,7 +404,7 @@ void setup() {
     lightScene_Zone0 = EEPROM.read(eeprom_addr_z0);
   }
   if(EEPROM.read(eeprom_addr_z1) > 0 && EEPROM.read(eeprom_addr_z1) < 11) {
-    lightScene_Zone0 = EEPROM.read(eeprom_addr_z1);
+    lightScene_Zone1 = EEPROM.read(eeprom_addr_z1);
   }
 
 }//end setup
