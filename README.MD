@@ -42,8 +42,8 @@ The source code is made to be adaptable to both v0.2 and v0.1 PCBs to use with t
 
 Designed signs vs. signs to design
 
-- [ ]  NES
-- [ ]  SNES
+- [x]  NES
+- [x]  SNES
 - [ ]  N64
 - [ ]  GC
 - [ ]  Wii
