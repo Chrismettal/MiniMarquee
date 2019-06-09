@@ -44,14 +44,14 @@ Designed signs vs. signs to design
 
 - [x]  NES
 - [x]  SNES
-- [ ]  N64
-- [ ]  GC
-- [ ]  Wii
-- [ ]  WiiU
-- [ ]  Switch
-- [ ]  PS1
-- [ ]  PS2
-- [ ]  PS3
+- [x]  N64
+- [x]  GC
+- [x]  Wii
+- [x]  WiiU
+- [x]  Switch
+- [x]  PS1
+- [x]  PS2
+- [x]  PS3
 - [x]  PS4
 - [ ]  Xbox Classic
 - [ ]  Xbox 360
