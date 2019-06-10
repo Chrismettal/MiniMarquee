@@ -48,6 +48,8 @@ The source code is made to be adaptable to both v0.2 and v0.1 PCBs to use with t
 
 This is an example of some of the designed signs. I am still in the process of printing out every one of them so i don't yet have pictures of all signs ready.
 
+I also uploaded the "RawSign" files in the 3d printable folder so you can design your own signs. Be sure to reupload them either as a remix on [The Thingiverse page](https://www.thingiverse.com/thing:3683055) or somewhere else where i can feed them back into here.
+
 Here is a list of the already made signs and the ones still on the to design list:
 
 - [x]  NES
