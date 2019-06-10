@@ -38,9 +38,13 @@ The device can be powered directly by a 12 V DC power supply. In my usecase the 
 The current PCB version is v0.2.
 The source code is made to be adaptable to both v0.2 and v0.1 PCBs to use with the old revision of the PCB. By default v0.2 is defined in the software. You will have to uncomment the "#define PCB_v0_1" to use the code with the old v0.1 PCB version, should you happen to get your hands on one.
 
-## Signs made
+## Signs
 
-Designed signs vs. signs to design
+![alt text](https://raw.githubusercontent.com/Chrismettal/MiniMarquee/master/images/SlicerExample.png)
+
+This is an example of some of the designed signs. I am still in the process of printing out every one of them so i don't yet have pictures of all signs ready.
+
+Here is a list of the already made signs and the ones still on the to design list:
 
 - [x]  NES
 - [x]  SNES
@@ -53,9 +57,9 @@ Designed signs vs. signs to design
 - [x]  PS2
 - [x]  PS3
 - [x]  PS4
-- [ ]  Xbox Classic
-- [ ]  Xbox 360
-- [ ]  Xbox One
+- [x]  Xbox Classic
+- [x]  Xbox 360
+- [x]  Xbox One
 - [ ]  Master System
 - [ ]  Megadrive
 - [ ]  Genesis
