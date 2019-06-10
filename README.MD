@@ -40,7 +40,7 @@ The source code is made to be adaptable to both v0.2 and v0.1 PCBs to use with t
 
 ## Signs
 
-![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/SlicerExample.png)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/sliced.png)
 
 This is an example of some of the designed signs. I am still in the process of printing out every one of them so i don't yet have pictures of all signs ready.
 
