@@ -50,7 +50,7 @@ This is an example of some of the designed signs. I am still in the process of p
 
 I also uploaded the "RawSign" files in the 3d printable folder so you can design your own signs. Be sure to reupload them either as a remix on [The Thingiverse page](https://www.thingiverse.com/thing:3683055) or somewhere else where i can feed them back into here.
 
-Here is a list of the already made signs and the ones still on the to design list:
+Here is a list of the already made signs:
 
 - [x]  NES
 - [x]  SNES
@@ -66,14 +66,13 @@ Here is a list of the already made signs and the ones still on the to design lis
 - [x]  Xbox Classic
 - [x]  Xbox 360
 - [x]  Xbox One
-- [ ]  Master System
-- [ ]  Megadrive
-- [ ]  Genesis
-- [ ]  Saturn
-- [ ]  Dreamcast
-- [ ]  Atari 2600
-- [ ]  Jaguar
-- [ ]  Diffuse plate for stickers
+- [x]  Master System
+- [x]  Genesis
+- [x]  Dreamcast
+- [x]  Atari 2600
+- [x]  NeoGeo
+- [x]  Commodore
+- [x]  Diffuse plate for stickers
 
 ## Controls
 
