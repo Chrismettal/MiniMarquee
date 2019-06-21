@@ -1,3 +1,7 @@
-Case_Singlecolor_r3:
+Case_Singlecolor
+	r3:
 	-Added screwless clamps for PCB
 	-Added slots for diffusor screen
+	
+	r4:
+	-Better mount for diffusor screen

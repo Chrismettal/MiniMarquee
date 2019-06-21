@@ -32,9 +32,9 @@
   const byte pin_z0_R      = 9;
   const byte pin_z0_G      = 10;
   const byte pin_z0_B      = 11;
-  const byte pin_z1_R      = 3;
-  const byte pin_z1_G      = 5;
-  const byte pin_z1_B      = 6;
+  const byte pin_z1_R      = 5;
+  const byte pin_z1_G      = 6;
+  const byte pin_z1_B      = 3;
 #endif
 #define buttonPin A0
 
@@ -56,7 +56,7 @@ byte out_val_z1_B = 0;
 
 //button variables
 int longPressDuration         = 1000; //long press duration in ms
-int doubleClickduration       = 300;  //double click duration in ms
+int doubleClickduration       = 500;  //double click duration in ms
 OneButton button(buttonPin, true);    //attach OneButton to defined buttonPin
 
 //light scene variables
@@ -151,73 +151,76 @@ void LightSceneEvaluation() {
       val_z0_G = 206;
       val_z0_B = 250;
     break;
+
   }
+
   //Zone1 is external RGB LED strip
   switch (lightScene_Zone1) {
      case 1: //Red
-      val_z0_R = 255;
-      val_z0_G = 0;
-      val_z0_B = 0;
+      val_z1_R = 255;
+      val_z1_G = 0;
+      val_z1_B = 0;
     break;
 
     case 2: //Green
-      val_z0_R = 0;
-      val_z0_G = 255;
-      val_z0_B = 0;
+      val_z1_R = 0;
+      val_z1_G = 255;
+      val_z1_B = 0;
     break;
 
     case 3: //Blue
-      val_z0_R = 0;
-      val_z0_G = 0;
-      val_z0_B = 255;
+      val_z1_R = 0;
+      val_z1_G = 0;
+      val_z1_B = 255;
     break;
 
     case 4:
       //example 2 color fade between green and blue using the iFade sweeping counter
       //out_val is also used here to overwrite the global fading
-      val_z0_R = 0;
-      val_z0_G = iFade_slow;
-      val_z0_B = 255-iFade_slow;     
-      out_val_z0_R = 0;
-      out_val_z0_G = iFade_slow;
-      out_val_z0_B = 255-iFade_slow;
+      val_z1_R = 0;
+      val_z1_G = iFade_slow;
+      val_z1_B = 255-iFade_slow;     
+      out_val_z1_R = 0;
+      out_val_z1_G = iFade_slow;
+      out_val_z1_B = 255-iFade_slow;
     break;
     
     case 5: //warm white
-      val_z0_R = 255;
-      val_z0_G = 239;
-      val_z0_B = 213;
+      val_z1_R = 255;
+      val_z1_G = 230;
+      val_z1_B = 205;
     break;
 
     case 6: //cold white
-      val_z0_R = 248;
-      val_z0_G = 248;
-      val_z0_B = 255;
+      val_z1_R = 248;
+      val_z1_G = 248;
+      val_z1_B = 255;
     break;
 
     case 7: //Yellow
-      val_z0_R = 255;
-      val_z0_G = 255;
-      val_z0_B = 0;
+      val_z1_R = 255;
+      val_z1_G = 255;
+      val_z1_B = 0;
     break;
 
     case 8: //Orange 
-      val_z0_R = 255;
-      val_z0_G = 165;
-      val_z0_B = 0;
+      val_z1_R = 255;
+      val_z1_G = 165;
+      val_z1_B = 0;
     break;
 
     case 9: //Purple
-      val_z0_R = 160;
-      val_z0_G = 32;
-      val_z0_B = 240;
+      val_z1_R = 160;
+      val_z1_G = 32;
+      val_z1_B = 240;
     break;
 
     case 10: //sky blue
-      val_z0_R = 135;
-      val_z0_G = 206;
-      val_z0_B = 250;
+      val_z1_R = 135;
+      val_z1_G = 206;
+      val_z1_B = 250;
     break;
+
   }//end light scenes
 
 }//end LightSceneEvaluation
@@ -336,7 +339,7 @@ void changeActiveZone() {
 
     activeLightZone = 0;
 
-    //zone 1 animation
+    //zone 0 animation
     for (byte i = 0; i < 255; i++) {
       AnalogOut(pin_z0_R, i);
       delayMicroseconds(500);
