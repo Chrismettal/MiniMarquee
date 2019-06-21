@@ -87,19 +87,19 @@ void LightSceneEvaluation() {
   //Here you can set your own light scenes.
   //Zone0 is internal backlight
   switch (lightScene_Zone0) {
-    case 1:
+    case 1: //Red
       val_z0_R = 255;
       val_z0_G = 0;
       val_z0_B = 0;
     break;
 
-    case 2:
+    case 2: //Green
       val_z0_R = 0;
       val_z0_G = 255;
       val_z0_B = 0;
     break;
 
-    case 3:
+    case 3: //Blue
       val_z0_R = 0;
       val_z0_G = 0;
       val_z0_B = 255;
@@ -109,117 +109,115 @@ void LightSceneEvaluation() {
       //example 2 color fade between green and blue using the iFade sweeping counter
       //out_val is also used here to overwrite the global fading
       val_z0_R = 0;
-      val_z0_G = iFade_fast;
-      val_z0_B = 255-iFade_fast;     
+      val_z0_G = iFade_slow;
+      val_z0_B = 255-iFade_slow;     
       out_val_z0_R = 0;
-      out_val_z0_G = iFade_fast;
-      out_val_z0_B = 255-iFade_fast;
+      out_val_z0_G = iFade_slow;
+      out_val_z0_B = 255-iFade_slow;
     break;
     
-    case 5:
+    case 5: //warm white
       val_z0_R = 255;
+      val_z0_G = 239;
+      val_z0_B = 213;
+    break;
+
+    case 6: //cold white
+      val_z0_R = 248;
+      val_z0_G = 248;
+      val_z0_B = 255;
+    break;
+
+    case 7: //Yellow
+      val_z0_R = 255;
+      val_z0_G = 255;
+      val_z0_B = 0;
+    break;
+
+    case 8: //Orange 
+      val_z0_R = 255;
+      val_z0_G = 165;
+      val_z0_B = 0;
+    break;
+
+    case 9: //Purple
+      val_z0_R = 160;
+      val_z0_G = 32;
+      val_z0_B = 240;
+    break;
+
+    case 10: //sky blue
+      val_z0_R = 135;
+      val_z0_G = 206;
+      val_z0_B = 250;
+    break;
+  }
+  //Zone1 is external RGB LED strip
+  switch (lightScene_Zone1) {
+     case 1: //Red
+      val_z0_R = 255;
+      val_z0_G = 0;
+      val_z0_B = 0;
+    break;
+
+    case 2: //Green
+      val_z0_R = 0;
+      val_z0_G = 255;
+      val_z0_B = 0;
+    break;
+
+    case 3: //Blue
+      val_z0_R = 0;
       val_z0_G = 0;
       val_z0_B = 255;
     break;
 
-    case 6:
+    case 4:
+      //example 2 color fade between green and blue using the iFade sweeping counter
+      //out_val is also used here to overwrite the global fading
       val_z0_R = 0;
-      val_z0_G = 255;
+      val_z0_G = iFade_slow;
+      val_z0_B = 255-iFade_slow;     
+      out_val_z0_R = 0;
+      out_val_z0_G = iFade_slow;
+      out_val_z0_B = 255-iFade_slow;
+    break;
+    
+    case 5: //warm white
+      val_z0_R = 255;
+      val_z0_G = 239;
+      val_z0_B = 213;
+    break;
+
+    case 6: //cold white
+      val_z0_R = 248;
+      val_z0_G = 248;
       val_z0_B = 255;
     break;
 
-    case 7:
+    case 7: //Yellow
       val_z0_R = 255;
       val_z0_G = 255;
-      val_z0_B = 255;
-    break;
-
-    case 8:
-      val_z0_R = 255;
-      val_z0_G = 125;
       val_z0_B = 0;
     break;
 
-    case 9:
+    case 8: //Orange 
       val_z0_R = 255;
-      val_z0_G = 125;
-      val_z0_B = 125;
+      val_z0_G = 165;
+      val_z0_B = 0;
     break;
 
-    case 10:
-      val_z0_R = 30;
-      val_z0_G = 30;
-      val_z0_B = 200;
+    case 9: //Purple
+      val_z0_R = 160;
+      val_z0_G = 32;
+      val_z0_B = 240;
     break;
 
-  }
-  //Zone1 is external RGB LED strip
-  switch (lightScene_Zone1) {
-    case 1:
-      val_z1_R = 255;
-      val_z1_G = 0;
-      val_z1_B = 0;
+    case 10: //sky blue
+      val_z0_R = 135;
+      val_z0_G = 206;
+      val_z0_B = 250;
     break;
-
-    case 2:
-      val_z1_R = 0;
-      val_z1_G = 255;
-      val_z1_B = 0;
-    break;
-
-    case 3:
-      val_z1_R = 0;
-      val_z1_G = 0;
-      val_z1_B = 255;
-    break;
-
-    case 4:
-      //example 2 color fade between blue and green using the iFade sweeping counter  
-      //out_val is also used here to overwrite the global fading
-      val_z1_R = 0;
-      val_z1_B = iFade_fast;
-      val_z1_G = 255-iFade_fast;
-      out_val_z1_R = 0;
-      out_val_z1_B = iFade_fast;
-      out_val_z1_G = 255-iFade_fast;
-    break;
-
-    case 5:
-      val_z1_R = 255;
-      val_z1_G = 0;
-      val_z1_B = 255;
-    break;
-
-    case 6:
-      val_z1_R = 0;
-      val_z1_G = 255;
-      val_z1_B = 255;
-    break;
-
-    case 7:
-      val_z1_R = 255;
-      val_z1_G = 255;
-      val_z1_B = 255;
-    break;
-
-    case 8:
-      val_z1_R = 255;
-      val_z1_G = 125;
-      val_z1_B = 0;
-    break;
-
-    case 9:
-      val_z1_R = 255;
-      val_z1_G = 125;
-      val_z1_B = 125;
-    break;
-
-    case 10:
-      val_z1_R = 30;
-      val_z1_G = 30;
-      val_z1_B = 200;
-    break;
-
   }//end light scenes
 
 }//end LightSceneEvaluation
