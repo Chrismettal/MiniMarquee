@@ -52,6 +52,7 @@ I also uploaded the "RawSign" files in the 3d printable folder so you can design
 
 Here is a list of the already made signs:
 
+- [ ]  Nintendo
 - [x]  NES
 - [x]  SNES
 - [x]  N64
@@ -66,12 +67,16 @@ Here is a list of the already made signs:
 - [x]  Xbox Classic
 - [x]  Xbox 360
 - [x]  Xbox One
+- [ ]  Sega
 - [x]  Master System
 - [x]  Genesis
+- [ ]  Megadrive
 - [x]  Dreamcast
 - [x]  Atari 2600
 - [x]  NeoGeo
 - [x]  Commodore
+- [ ]  PC Engine
+- [ ]  Turbografx 16
 - [x]  Diffuse plate for stickers
 
 ## Controls
