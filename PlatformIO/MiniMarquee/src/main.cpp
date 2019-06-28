@@ -105,26 +105,21 @@ void LightSceneEvaluation() {
       val_z0_B = 255;
     break;
 
-    case 4:
-      //example 2 color fade between green and blue using the iFade sweeping counter
-      //out_val is also used here to overwrite the global fading
-      val_z0_R = 0;
-      val_z0_G = iFade_slow;
-      val_z0_B = 255-iFade_slow;     
-      out_val_z0_R = 0;
-      out_val_z0_G = iFade_slow;
-      out_val_z0_B = 255-iFade_slow;
+    case 4: //Sky Blue
+      val_z0_R = 135;
+      val_z0_G = 206;
+      val_z0_B = 250;
     break;
     
-    case 5: //warm white
+    case 5: //Warm white
       val_z0_R = 255;
       val_z0_G = 239;
-      val_z0_B = 213;
+      val_z0_B = 210;
     break;
 
-    case 6: //cold white
-      val_z0_R = 248;
-      val_z0_G = 248;
+    case 6: //Cold white
+      val_z0_R = 240;
+      val_z0_G = 240;
       val_z0_B = 255;
     break;
 
@@ -146,17 +141,61 @@ void LightSceneEvaluation() {
       val_z0_B = 240;
     break;
 
-    case 10: //sky blue
-      val_z0_R = 135;
-      val_z0_G = 206;
-      val_z0_B = 250;
+    case 10: //Olive
+      val_z0_R = 0;
+      val_z0_G = 100;
+      val_z0_B = 51;
     break;
 
+    case 11: //Fade Red - Green slow
+      val_z0_R = iFade_slow;
+      val_z0_G = 255-iFade_slow;
+      val_z0_B = 0;     
+      out_val_z0_R = val_z0_R;
+      out_val_z0_G = val_z0_G;
+      out_val_z0_B = val_z0_B;
+    break;
+    
+    case 12: //Fade Green - Blue slow
+      val_z0_R = 0;
+      val_z0_G = iFade_slow;
+      val_z0_B = 255-iFade_slow;     
+      out_val_z0_R = val_z0_R;
+      out_val_z0_G = val_z0_G;
+      out_val_z0_B = val_z0_B;
+    break;
+
+    case 13: //Fade Red - Blue slow
+      val_z0_R = iFade_slow;
+      val_z0_G = 0;
+      val_z0_B = 255-iFade_slow;     
+      out_val_z0_R = val_z0_R;
+      out_val_z0_G = val_z0_G;
+      out_val_z0_B = val_z0_B;
+    break;
+
+    case 14: //Fade Yellow - Blue slow
+      val_z0_R = iFade_slow;
+      val_z0_G = iFade_slow;
+      val_z0_B = 255-iFade_slow;     
+      out_val_z0_R = val_z0_R;
+      out_val_z0_G = val_z0_G;
+      out_val_z0_B = val_z0_B;
+    break;
+
+    case 15: //Breathing White
+      val_z0_R = iFade_slow;
+      val_z0_G = iFade_slow;
+      val_z0_B = iFade_slow;     
+      out_val_z0_R = val_z0_R;
+      out_val_z0_G = val_z0_G;
+      out_val_z0_B = val_z0_B;
+    break;
   }
 
   //Zone1 is external RGB LED strip
   switch (lightScene_Zone1) {
-     case 1: //Red
+    case 1: //Red
       val_z1_R = 255;
       val_z1_G = 0;
       val_z1_B = 0;
@@ -174,26 +213,21 @@ void LightSceneEvaluation() {
       val_z1_B = 255;
     break;
 
-    case 4:
-      //example 2 color fade between green and blue using the iFade sweeping counter
-      //out_val is also used here to overwrite the global fading
-      val_z1_R = 0;
-      val_z1_G = iFade_slow;
-      val_z1_B = 255-iFade_slow;     
-      out_val_z1_R = 0;
-      out_val_z1_G = iFade_slow;
-      out_val_z1_B = 255-iFade_slow;
+    case 4: //Sky Blue
+      val_z1_R = 135;
+      val_z1_G = 206;
+      val_z1_B = 250;
     break;
     
-    case 5: //warm white
+    case 5: //Warm white
       val_z1_R = 255;
-      val_z1_G = 230;
-      val_z1_B = 205;
+      val_z1_G = 239;
+      val_z1_B = 210;
     break;
 
-    case 6: //cold white
-      val_z1_R = 248;
-      val_z1_G = 248;
+    case 6: //Cold white
+      val_z1_R = 240;
+      val_z1_G = 240;
       val_z1_B = 255;
     break;
 
@@ -215,10 +249,55 @@ void LightSceneEvaluation() {
       val_z1_B = 240;
     break;
 
-    case 10: //sky blue
-      val_z1_R = 135;
-      val_z1_G = 206;
-      val_z1_B = 250;
+    case 10: //Olive
+      val_z1_R = 0;
+      val_z1_G = 100;
+      val_z1_B = 51;
+    break;
+
+    case 11: //Fade Red - Green slow
+      val_z1_R = iFade_slow;
+      val_z1_G = 255-iFade_slow;
+      val_z1_B = 0;     
+      out_val_z1_R = val_z1_R;
+      out_val_z1_G = val_z1_G;
+      out_val_z1_B = val_z1_B;
+    break;
+    
+    case 12: //Fade Green - Blue slow
+      val_z1_R = 0;
+      val_z1_G = iFade_slow;
+      val_z1_B = 255-iFade_slow;     
+      out_val_z1_R = val_z1_R;
+      out_val_z1_G = val_z1_G;
+      out_val_z1_B = val_z1_B;
+    break;
+
+    case 13: //Fade Red - Blue slow
+      val_z1_R = iFade_slow;
+      val_z1_G = 0;
+      val_z1_B = 255-iFade_slow;     
+      out_val_z1_R = val_z1_R;
+      out_val_z1_G = val_z1_G;
+      out_val_z1_B = val_z1_B;
+    break;
+
+    case 14: //Fade Yellow - Blue slow
+      val_z1_R = iFade_slow;
+      val_z1_G = iFade_slow;
+      val_z1_B = 255-iFade_slow;     
+      out_val_z1_R = val_z1_R;
+      out_val_z1_G = val_z1_G;
+      out_val_z1_B = val_z1_B;
+    break;
+
+    case 15: //Breathing White
+      val_z1_R = iFade_slow;
+      val_z1_G = iFade_slow;
+      val_z1_B = iFade_slow;     
+      out_val_z1_R = val_z1_R;
+      out_val_z1_G = val_z1_G;
+      out_val_z1_B = val_z1_B;
     break;
 
   }//end light scenes
@@ -227,36 +306,30 @@ void LightSceneEvaluation() {
 
 /****************************Boot animation*****************************/
 void BootAnimation() {
-  //rapidly fade through the main colors
+  //Quick boot animation
   for (byte i = 0; i < 255; i++) {
     AnalogOut(pin_z0_R, i);
     AnalogOut(pin_z1_G, i);
-    delayMicroseconds(500);
-  }
-  for (byte i = 255; i > 0; i--) {
-    AnalogOut(pin_z0_R, i);
-    AnalogOut(pin_z1_G, i);
-    delayMicroseconds(500);
+    delay(1);
   }
   for (byte i = 0; i < 255; i++) {
+    AnalogOut(pin_z0_R, (255-i));
+    AnalogOut(pin_z1_G, (255-i));
     AnalogOut(pin_z0_G, i);
     AnalogOut(pin_z1_B, i);
-    delayMicroseconds(500);
-  }
-  for (byte i = 255; i > 0; i--) {
-    AnalogOut(pin_z0_G, i);
-    AnalogOut(pin_z1_B, i);
-    delayMicroseconds(500);
+    delay(1);
   }
   for (byte i = 0; i < 255; i++) {
+    AnalogOut(pin_z0_G, (255-i));
+    AnalogOut(pin_z1_B, (255-i));
     AnalogOut(pin_z0_B, i);
     AnalogOut(pin_z1_R, i);
-    delayMicroseconds(500);
+    delay(1);
   }
   for (byte i = 255; i > 0; i--) {
     AnalogOut(pin_z0_B, i);
     AnalogOut(pin_z1_R, i);
-    delayMicroseconds(500);
+    delay(1);
   }
 }//end bootanimation
 
@@ -265,7 +338,7 @@ void NextLightScene() {
 
   if (activeLightZone == 0){
     lightScene_Zone0++;
-    if (lightScene_Zone0 == 11){
+    if (lightScene_Zone0 == 16){
       lightScene_Zone0 = 1;
     }
     //permanently save light scene for rebooting
@@ -273,7 +346,7 @@ void NextLightScene() {
   }
   if (activeLightZone == 1){
     lightScene_Zone1++;
-    if (lightScene_Zone1 == 11){
+    if (lightScene_Zone1 == 16){
       lightScene_Zone1 = 1;
     }
     //permanently save light scene for rebooting
@@ -287,7 +360,7 @@ void PrevLightScene() {
   if (activeLightZone == 0){
     lightScene_Zone0--;
     if (lightScene_Zone0 == 0){
-      lightScene_Zone0 = 10;
+      lightScene_Zone0 = 15;
     }
     //permanently save light scene for rebooting
     EEPROM.write(eeprom_addr_z0, lightScene_Zone0);
@@ -295,7 +368,7 @@ void PrevLightScene() {
   if (activeLightZone == 1){
     lightScene_Zone1--;
     if (lightScene_Zone1 == 0){
-      lightScene_Zone1 = 10;
+      lightScene_Zone1 = 15;
     }
     //permanently save light scene for rebooting
     EEPROM.write(eeprom_addr_z1, lightScene_Zone1);
@@ -401,10 +474,10 @@ void setup() {
   BootAnimation();
 
   //read EEPROM for saved light scenes
-  if(EEPROM.read(eeprom_addr_z0) > 0 && EEPROM.read(eeprom_addr_z0) < 11) {
+  if(EEPROM.read(eeprom_addr_z0) > 0 && EEPROM.read(eeprom_addr_z0) < 16) {
     lightScene_Zone0 = EEPROM.read(eeprom_addr_z0);
   }
-  if(EEPROM.read(eeprom_addr_z1) > 0 && EEPROM.read(eeprom_addr_z1) < 11) {
+  if(EEPROM.read(eeprom_addr_z1) > 0 && EEPROM.read(eeprom_addr_z1) < 16) {
     lightScene_Zone1 = EEPROM.read(eeprom_addr_z1);
   }
 
@@ -461,6 +534,6 @@ void loop() {
     AnalogOut(pin_z1_G, out_val_z1_G);
     AnalogOut(pin_z1_B, out_val_z1_B);
 
-  }//end interval
+  }//end update interval
 
 }//end Loop

@@ -10,7 +10,7 @@ Might be used for multiple consoles to have the specific sign and indirect strip
 
 ## Capabilities
 
-At the moment 10 light scenes can be hardcoded including static light ones and fading between 2 colors. The amount of light scenes and their values can be modified in the source. The same light scenes will be used for the backlight and the RGB strip output, but the two "zones" can be individually set to display a different scene to enable a contrast between the sign and indirect lighting. A single button steps through the light scenes for the specific zones. The current light scene is always saved in EEPROM to stay persistent between power cycles.
+At the moment 15 light scenes can be hardcoded including static light ones and fading between 2 colors. More complex fades can be accomplished at will with any number of calculations with the iFade variables. The amount of light scenes and their values can be modified in the source. The same light scenes will be used for the backlight and the RGB strip output, but the two "zones" can be individually set to display a different scene to enable a contrast between the sign and indirect lighting. A single button steps through the light scenes for the specific zones. The current light scene is always saved in EEPROM to stay persistent between power cycles.
 
 ![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/Output.jpg)
 
@@ -86,3 +86,25 @@ Here is a list of the already made signs:
 - Button long click     --> Switch between which light zone to change
 
 The device can just be switched on and off by cutting the power to it. It will remember its lightscenes for the next boot.
+
+## Scenes
+
+For now 15 lightscenes are precoded:
+
+- Red
+- Green
+- Blue
+- Sky Blue
+- Warm white
+- Cold white
+- Yelow
+- Orange
+- Purple
+- Olive
+- Slow fade between Red and Green
+- Slow fade between Green and Blue
+- Slow fade between Blue and Red
+- Slow fade between Yellow and Blue
+- Breathing white
+
+For not the Scenes are the same for internal and external lightzone but they don't have to be, should you want to change that.

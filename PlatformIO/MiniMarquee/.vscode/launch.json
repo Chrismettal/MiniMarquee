@@ -12,8 +12,8 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-            "executable": "e:/Daten/OneDrive/Projekte/MiniMarquee/PlatformIO/MiniMarquee/.pioenvs/pro16MHzatmega168/firmware.elf",
-            "toolchainBinDir": "C:/Users/Chris/.platformio/packages/toolchain-atmelavr/bin",
+            "executable": "c:/Users/lbrueggen/Downloads/MiniMarquee/MiniMarquee/PlatformIO/MiniMarquee/.pioenvs/pro16MHzatmega168/firmware.elf",
+            "toolchainBinDir": "C:/Users/lbrueggen/.platformio/packages/toolchain-atmelavr/bin",
             "preLaunchTask": {
                 "type": "PlatformIO",
                 "task": "Pre-Debug"
@@ -24,8 +24,8 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-            "executable": "e:/Daten/OneDrive/Projekte/MiniMarquee/PlatformIO/MiniMarquee/.pioenvs/pro16MHzatmega168/firmware.elf",
-            "toolchainBinDir": "C:/Users/Chris/.platformio/packages/toolchain-atmelavr/bin",
+            "executable": "c:/Users/lbrueggen/Downloads/MiniMarquee/MiniMarquee/PlatformIO/MiniMarquee/.pioenvs/pro16MHzatmega168/firmware.elf",
+            "toolchainBinDir": "C:/Users/lbrueggen/.platformio/packages/toolchain-atmelavr/bin",
             "internalConsoleOptions": "openOnSessionStart"
         }
     ]
