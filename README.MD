@@ -42,6 +42,36 @@ The device can be powered directly by a 12 V DC power supply. In my usecase the 
 The current PCB version is v0.2.
 The source code is made to be adaptable to both v0.2 and v0.1 PCBs to use with the old revision of the PCB. By default v0.2 is defined in the software. You will have to uncomment the "#define PCB_v0_1" to use the code with the old v0.1 PCB version, should you happen to get your hands on one.
 
+## Controls
+
+- Button short click    --> Next lightscene in current light zone
+- Button double click   --> Previous lightscene in current light zone
+- Button long click     --> Switch between which light zone to change
+
+The device can just be switched on and off by cutting the power to it. It will remember its lightscenes for the next boot.
+
+## Scenes
+
+For now 15 lightscenes are precoded:
+
+- Red
+- Green
+- Blue
+- Sky Blue
+- Warm white
+- Cold white
+- Yelow
+- Orange
+- Purple
+- Olive
+- Slow fade between Red and Green
+- Slow fade between Green and Blue
+- Slow fade between Blue and Red
+- Slow fade between Yellow and Blue
+- Breathing white
+
+For not the Scenes are the same for internal and external lightzone but they don't have to be, should you want to change that.
+
 ## Signs
 
 ![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/sliced.png)
@@ -79,32 +109,24 @@ Here is a list of the already made signs:
 - [ ]  Turbografx 16
 - [x]  Diffuse plate for stickers
 
-## Controls
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/NES.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/SNES.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/N64.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/NGC.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/Wii.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/WiiU.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/Switch.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/PS.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/PS2.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/PS3.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/PS4.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/Xbox.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/Xbox360.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/XboxOne.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/Atari2600.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/Commodore.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/Neo-Geo.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/SegaMasterSystem.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/Genesis.jpg)
+![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/signs/Dreamcast.jpg)
 
-- Button short click    --> Next lightscene in current light zone
-- Button double click   --> Previous lightscene in current light zone
-- Button long click     --> Switch between which light zone to change
-
-The device can just be switched on and off by cutting the power to it. It will remember its lightscenes for the next boot.
-
-## Scenes
-
-For now 15 lightscenes are precoded:
-
-- Red
-- Green
-- Blue
-- Sky Blue
-- Warm white
-- Cold white
-- Yelow
-- Orange
-- Purple
-- Olive
-- Slow fade between Red and Green
-- Slow fade between Green and Blue
-- Slow fade between Blue and Red
-- Slow fade between Yellow and Blue
-- Breathing white
-
-For not the Scenes are the same for internal and external lightzone but they don't have to be, should you want to change that.
