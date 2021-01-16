@@ -1,5 +1,9 @@
 ![alt text](https://github.com/Chrismettal/MiniMarquee/blob/master/images/Logo.png "MiniMarqueev0.2Logo")
 
+# Update
+
+v0.3 newly uses only a 10uF input cap instead of a 100uF one, since the inrush current when plugging in your PSU made some cheaper 100uF caps fail in rare occasions even with 50% volate derating. a 10uF 35 V cap is effectively using a 2/3 derating and is much less likely to fail, even when cheaper caps are used. Because of the violence of failing tantalum caps a v0.4 will be made that does not use tantalums at all in the future. For that reason v0.3 gerbers are not tested, but have just been generated after changing the silkscreen value of the input cap.
+
 ## What is this
 
 Small marquees for standalone decoration with backlit signs, including output for up to 25 W of RGB LED strip.

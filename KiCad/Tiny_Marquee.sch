@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Tiny_Marquee-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -81,7 +80,7 @@ F 3 "" H 9100 4000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR021
+L Tiny_Marquee-rescue:GND-power #PWR021
 U 1 1 5BB4F8CF
 P 9800 6000
 F 0 "#PWR021" H 9800 5750 50  0001 C CNN
@@ -92,7 +91,7 @@ F 3 "" H 9800 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR020
+L Tiny_Marquee-rescue:+12V-power #PWR020
 U 1 1 5BB4F98D
 P 7700 1100
 F 0 "#PWR020" H 7700 950 50  0001 C CNN
@@ -103,7 +102,7 @@ F 3 "" H 7700 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R RV_4
+L Tiny_Marquee-rescue:R-Device RV_4
 U 1 1 5BB4FB2A
 P 9550 4250
 F 0 "RV_4" V 9630 4250 50  0000 C CNN
@@ -114,7 +113,7 @@ F 3 "" H 9550 4250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R RV_8
+L Tiny_Marquee-rescue:R-Device RV_8
 U 1 1 5BB4FC65
 P 9550 4050
 F 0 "RV_8" V 9630 4050 50  0000 C CNN
@@ -125,7 +124,7 @@ F 3 "" H 9550 4050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R RV_12
+L Tiny_Marquee-rescue:R-Device RV_12
 U 1 1 5BB4FCA8
 P 9550 3850
 F 0 "RV_12" V 9630 3850 50  0000 C CNN
@@ -136,7 +135,7 @@ F 3 "" H 9550 3850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R RV_11
+L Tiny_Marquee-rescue:R-Device RV_11
 U 1 1 5BB50BF5
 P 9550 3000
 F 0 "RV_11" V 9630 3000 50  0000 C CNN
@@ -147,7 +146,7 @@ F 3 "" H 9550 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R RV_7
+L Tiny_Marquee-rescue:R-Device RV_7
 U 1 1 5BB50C5B
 P 9550 3200
 F 0 "RV_7" V 9630 3200 50  0000 C CNN
@@ -158,7 +157,7 @@ F 3 "" H 9550 3200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R RV_3
+L Tiny_Marquee-rescue:R-Device RV_3
 U 1 1 5BB50CA2
 P 9550 3400
 F 0 "RV_3" V 9630 3400 50  0000 C CNN
@@ -180,7 +179,7 @@ F 3 "" H 2200 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR05
+L Tiny_Marquee-rescue:+5V-power #PWR05
 U 1 1 5BB51CF5
 P 1200 900
 F 0 "#PWR05" H 1200 750 50  0001 C CNN
@@ -191,7 +190,7 @@ F 3 "" H 1200 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR07
+L Tiny_Marquee-rescue:GND-power #PWR07
 U 1 1 5BB51EED
 P 1200 3350
 F 0 "#PWR07" H 1200 3100 50  0001 C CNN
@@ -202,7 +201,7 @@ F 3 "" H 1200 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C2
+L Tiny_Marquee-rescue:C_Small-Device C2
 U 1 1 5BB521EA
 P 1200 1750
 F 0 "C2" H 1210 1820 50  0000 L CNN
@@ -213,7 +212,7 @@ F 3 "" H 1200 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR06
+L Tiny_Marquee-rescue:GND-power #PWR06
 U 1 1 5BB5232A
 P 1200 1950
 F 0 "#PWR06" H 1200 1700 50  0001 C CNN
@@ -224,7 +223,7 @@ F 3 "" H 1200 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal_Small Y1
+L Tiny_Marquee-rescue:Crystal_Small-Device Y1
 U 1 1 5BB52662
 P 3900 1650
 F 0 "Y1" H 3900 1400 50  0000 C CNN
@@ -235,7 +234,7 @@ F 3 "" H 3900 1650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C_Small C3
+L Tiny_Marquee-rescue:C_Small-Device C3
 U 1 1 5BB52B6C
 P 3750 1800
 F 0 "C3" H 3760 1870 50  0000 L CNN
@@ -246,7 +245,7 @@ F 3 "" H 3750 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C4
+L Tiny_Marquee-rescue:C_Small-Device C4
 U 1 1 5BB52BD6
 P 4050 1800
 F 0 "C4" H 4060 1870 50  0000 L CNN
@@ -257,7 +256,7 @@ F 3 "" H 4050 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR011
+L Tiny_Marquee-rescue:GND-power #PWR011
 U 1 1 5BB52EC7
 P 3900 1950
 F 0 "#PWR011" H 3900 1700 50  0001 C CNN
@@ -279,7 +278,7 @@ F 3 "" H 3700 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR012
+L Tiny_Marquee-rescue:GND-power #PWR012
 U 1 1 5BB53211
 P 4050 5550
 F 0 "#PWR012" H 4050 5300 50  0001 C CNN
@@ -290,7 +289,7 @@ F 3 "" H 4050 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
+L Tiny_Marquee-rescue:R-Device R1
 U 1 1 5BB533B0
 P 3400 4800
 F 0 "R1" V 3480 4800 50  0000 C CNN
@@ -301,7 +300,7 @@ F 3 "" H 3400 4800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR08
+L Tiny_Marquee-rescue:+5V-power #PWR08
 U 1 1 5BB53CCC
 P 3400 4600
 F 0 "#PWR08" H 3400 4450 50  0001 C CNN
@@ -355,7 +354,7 @@ MISO
 Text Label 3550 1450 2    49   ~ 0
 SCK
 $Comp
-L power:GND #PWR017
+L Tiny_Marquee-rescue:GND-power #PWR017
 U 1 1 5BB5779D
 P 6350 3100
 F 0 "#PWR017" H 6350 2850 50  0001 C CNN
@@ -366,7 +365,7 @@ F 3 "" H 6350 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR016
+L Tiny_Marquee-rescue:+5V-power #PWR016
 U 1 1 5BB57A2C
 P 6350 2800
 F 0 "#PWR016" H 6350 2650 50  0001 C CNN
@@ -393,7 +392,7 @@ SW1
 Text Label 3100 5350 0    49   ~ 0
 SW1
 $Comp
-L power:GND #PWR015
+L Tiny_Marquee-rescue:GND-power #PWR015
 U 1 1 5BC3819C
 P 6050 6050
 F 0 "#PWR015" H 6050 5800 50  0001 C CNN
@@ -404,7 +403,7 @@ F 3 "" H 6050 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
+L Tiny_Marquee-rescue:R-Device R2
 U 1 1 5BC381A5
 P 5100 4800
 F 0 "R2" V 5180 4800 50  0000 C CNN
@@ -415,7 +414,7 @@ F 3 "" H 5100 4800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R3
+L Tiny_Marquee-rescue:R-Device R3
 U 1 1 5BC381AB
 P 5100 5100
 F 0 "R3" V 5180 5100 50  0000 C CNN
@@ -426,7 +425,7 @@ F 3 "" H 5100 5100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R4
+L Tiny_Marquee-rescue:R-Device R4
 U 1 1 5BC381B1
 P 5100 5400
 F 0 "R4" V 5180 5400 50  0000 C CNN
@@ -460,7 +459,7 @@ F 3 "" H 6750 4000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+12V #PWR014
+L Tiny_Marquee-rescue:+12V-power #PWR014
 U 1 1 5BC3A6FC
 P 6050 4050
 F 0 "#PWR014" H 6050 3900 50  0001 C CNN
@@ -471,7 +470,7 @@ F 3 "" H 6050 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R7
+L Tiny_Marquee-rescue:R-Device R7
 U 1 1 5BC3E4CC
 P 5800 5650
 F 0 "R7" V 5880 5650 50  0000 C CNN
@@ -482,7 +481,7 @@ F 3 "" H 5800 5650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R6
+L Tiny_Marquee-rescue:R-Device R6
 U 1 1 5BC3E5F0
 P 5600 5650
 F 0 "R6" V 5680 5650 50  0000 C CNN
@@ -493,7 +492,7 @@ F 3 "" H 5600 5650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R5
+L Tiny_Marquee-rescue:R-Device R5
 U 1 1 5BC3E67D
 P 5400 5650
 F 0 "R5" V 5480 5650 50  0000 C CNN
@@ -722,7 +721,7 @@ Optional reset button
 Text Notes 4550 650  0    60   ~ 0
 Power In
 $Comp
-L Connector:Barrel_Jack_Switch J6
+L Tiny_Marquee-rescue:Barrel_Jack_Switch-Connector J6
 U 1 1 5BC448AC
 P 5300 1350
 F 0 "J6" H 5300 1560 50  0000 C CNN
@@ -759,7 +758,7 @@ Wire Wire Line
 	6700 1500 6700 1550
 Connection ~ 6300 1550
 $Comp
-L power:GND #PWR019
+L Tiny_Marquee-rescue:GND-power #PWR019
 U 1 1 5BC45AB5
 P 6700 1650
 F 0 "#PWR019" H 6700 1400 50  0001 C CNN
@@ -770,7 +769,7 @@ F 3 "" H 6700 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR018
+L Tiny_Marquee-rescue:+5V-power #PWR018
 U 1 1 5BC45BB0
 P 6700 1150
 F 0 "#PWR018" H 6700 1000 50  0001 C CNN
@@ -781,7 +780,7 @@ F 3 "" H 6700 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR013
+L Tiny_Marquee-rescue:+12V-power #PWR013
 U 1 1 5BC45C5B
 P 5850 1150
 F 0 "#PWR013" H 5850 1000 50  0001 C CNN
@@ -800,7 +799,7 @@ Connection ~ 6700 1250
 Wire Wire Line
 	5850 1150 5850 1250
 $Comp
-L Device:CP1_Small C6
+L Tiny_Marquee-rescue:CP1_Small-Device C6
 U 1 1 5BC4726C
 P 6700 1400
 F 0 "C6" H 6710 1470 50  0000 L CNN
@@ -811,11 +810,11 @@ F 3 "" H 6700 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1_Small C5
+L Tiny_Marquee-rescue:CP1_Small-Device C5
 U 1 1 5BC479E9
 P 5850 1400
 F 0 "C5" H 5860 1470 50  0000 L CNN
-F 1 "100uF" H 5900 1300 50  0000 L CNN
+F 1 "10uF" H 5900 1300 50  0000 L CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-15_Kemet-W_Pad2.25x2.55mm_HandSolder" H 5850 1400 50  0001 C CNN
 F 3 "" H 5850 1400 50  0001 C CNN
 	1    5850 1400
@@ -825,7 +824,7 @@ Wire Wire Line
 	5850 1500 5850 1550
 Connection ~ 5850 1550
 $Comp
-L Device:C_Small C1
+L Tiny_Marquee-rescue:C_Small-Device C1
 U 1 1 5BC48E38
 P 1050 1250
 F 0 "C1" H 1060 1320 50  0000 L CNN
@@ -838,7 +837,7 @@ $EndComp
 Wire Wire Line
 	1050 1050 1050 1150
 $Comp
-L power:GND #PWR02
+L Tiny_Marquee-rescue:GND-power #PWR02
 U 1 1 5BC49190
 P 1050 1400
 F 0 "#PWR02" H 1050 1150 50  0001 C CNN
@@ -874,7 +873,7 @@ Wire Wire Line
 Wire Wire Line
 	3750 2750 3750 2800
 $Comp
-L power:GND #PWR010
+L Tiny_Marquee-rescue:GND-power #PWR010
 U 1 1 5BC4A1BC
 P 3750 2800
 F 0 "#PWR010" H 3750 2550 50  0001 C CNN
@@ -885,7 +884,7 @@ F 3 "" H 3750 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR09
+L Tiny_Marquee-rescue:+5V-power #PWR09
 U 1 1 5BC4A2CF
 P 3750 2400
 F 0 "#PWR09" H 3750 2250 50  0001 C CNN
@@ -941,7 +940,7 @@ F 3 "" H 1450 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR01
+L Tiny_Marquee-rescue:+5V-power #PWR01
 U 1 1 5BC4CE33
 P 950 4100
 F 0 "#PWR01" H 950 3950 50  0001 C CNN
@@ -952,7 +951,7 @@ F 3 "" H 950 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR03
+L Tiny_Marquee-rescue:+12V-power #PWR03
 U 1 1 5BC4D072
 P 1150 4100
 F 0 "#PWR03" H 1150 3950 50  0001 C CNN
@@ -971,7 +970,7 @@ Wire Wire Line
 Wire Wire Line
 	950  4300 950  4100
 $Comp
-L power:GND #PWR04
+L Tiny_Marquee-rescue:GND-power #PWR04
 U 1 1 5BC4DA70
 P 1150 4500
 F 0 "#PWR04" H 1150 4250 50  0001 C CNN
@@ -1155,7 +1154,7 @@ F 3 "" H 10600 5350 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R13
+L Tiny_Marquee-rescue:R-Device R13
 U 1 1 5C746083
 P 9550 5600
 F 0 "R13" V 9630 5600 50  0000 C CNN
@@ -1166,7 +1165,7 @@ F 3 "" H 9550 5600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R12
+L Tiny_Marquee-rescue:R-Device R12
 U 1 1 5C76A52D
 P 9350 5600
 F 0 "R12" V 9430 5600 50  0000 C CNN
@@ -1177,7 +1176,7 @@ F 3 "" H 9350 5600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R11
+L Tiny_Marquee-rescue:R-Device R11
 U 1 1 5C76A5AB
 P 9150 5600
 F 0 "R11" V 9230 5600 50  0000 C CNN
@@ -1188,7 +1187,7 @@ F 3 "" H 9150 5600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R10
+L Tiny_Marquee-rescue:R-Device R10
 U 1 1 5C76A7FF
 P 8850 5350
 F 0 "R10" V 8930 5350 50  0000 C CNN
@@ -1209,7 +1208,7 @@ Wire Wire Line
 Wire Wire Line
 	9150 4750 9150 5450
 $Comp
-L Device:R R9
+L Tiny_Marquee-rescue:R-Device R9
 U 1 1 5C78E467
 P 8850 5050
 F 0 "R9" V 8930 5050 50  0000 C CNN
@@ -1220,7 +1219,7 @@ F 3 "" H 8850 5050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R8
+L Tiny_Marquee-rescue:R-Device R8
 U 1 1 5C78E4E7
 P 8850 4750
 F 0 "R8" V 8930 4750 50  0000 C CNN
@@ -1336,7 +1335,7 @@ F 3 "" H 9100 2300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R RV_2
+L Tiny_Marquee-rescue:R-Device RV_2
 U 1 1 5C880F06
 P 9550 2550
 F 0 "RV_2" V 9630 2550 50  0000 C CNN
@@ -1347,7 +1346,7 @@ F 3 "" H 9550 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R RV_6
+L Tiny_Marquee-rescue:R-Device RV_6
 U 1 1 5C880F0C
 P 9550 2350
 F 0 "RV_6" V 9630 2350 50  0000 C CNN
@@ -1358,7 +1357,7 @@ F 3 "" H 9550 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R RV_10
+L Tiny_Marquee-rescue:R-Device RV_10
 U 1 1 5C880F12
 P 9550 2150
 F 0 "RV_10" V 9630 2150 50  0000 C CNN
@@ -1369,7 +1368,7 @@ F 3 "" H 9550 2150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R RV_9
+L Tiny_Marquee-rescue:R-Device RV_9
 U 1 1 5C880F18
 P 9550 1300
 F 0 "RV_9" V 9630 1300 50  0000 C CNN
@@ -1380,7 +1379,7 @@ F 3 "" H 9550 1300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R RV_5
+L Tiny_Marquee-rescue:R-Device RV_5
 U 1 1 5C880F1E
 P 9550 1500
 F 0 "RV_5" V 9630 1500 50  0000 C CNN
@@ -1391,7 +1390,7 @@ F 3 "" H 9550 1500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R RV_1
+L Tiny_Marquee-rescue:R-Device RV_1
 U 1 1 5C880F24
 P 9550 1700
 F 0 "RV_1" V 9630 1700 50  0000 C CNN
@@ -1542,7 +1541,7 @@ Wire Notes Line
 Wire Notes Line
 	2450 4800 500  4800
 $Comp
-L Mechanical:MountingHole H1
+L Tiny_Marquee-rescue:MountingHole-Mechanical H1
 U 1 1 5C6D9FF7
 P 700 5100
 F 0 "H1" H 800 5146 50  0000 L CNN
@@ -1555,7 +1554,7 @@ $EndComp
 Text Notes 550  4950 0    60   ~ 0
 Mechanical
 $Comp
-L Mechanical:MountingHole H2
+L Tiny_Marquee-rescue:MountingHole-Mechanical H2
 U 1 1 5C704A92
 P 700 5350
 F 0 "H2" H 800 5396 50  0000 L CNN
@@ -1566,7 +1565,7 @@ F 3 "~" H 700 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
+L Tiny_Marquee-rescue:MountingHole-Mechanical H3
 U 1 1 5C704B2A
 P 700 5600
 F 0 "H3" H 800 5646 50  0000 L CNN
@@ -1577,7 +1576,7 @@ F 3 "~" H 700 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H4
+L Tiny_Marquee-rescue:MountingHole-Mechanical H4
 U 1 1 5C704BC4
 P 700 5850
 F 0 "H4" H 800 5896 50  0000 L CNN
@@ -1588,7 +1587,7 @@ F 3 "~" H 700 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H5
+L Tiny_Marquee-rescue:MountingHole-Mechanical H5
 U 1 1 5C721EAC
 P 1600 5600
 F 0 "H5" H 1700 5646 50  0000 L CNN
@@ -1599,7 +1598,7 @@ F 3 "~" H 1600 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H6
+L Tiny_Marquee-rescue:MountingHole-Mechanical H6
 U 1 1 5CB8B984
 P 1600 5100
 F 0 "H6" H 1700 5146 50  0000 L CNN
@@ -1610,7 +1609,7 @@ F 3 "~" H 1600 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H7
+L Tiny_Marquee-rescue:MountingHole-Mechanical H7
 U 1 1 5CB8BA48
 P 1600 5350
 F 0 "H7" H 1700 5396 50  0000 L CNN
