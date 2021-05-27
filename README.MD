@@ -4,6 +4,13 @@
 
 v0.3 newly uses only a 10uF input cap instead of a 100uF one, since the inrush current when plugging in your PSU made some cheaper 100uF caps fail in rare occasions even with 50% volate derating. a 10uF 35 V cap is effectively using a 2/3 derating and is much less likely to fail, even when cheaper caps are used. Because of the violence of failing tantalum caps a v0.4 will be made that does not use tantalums at all in the future. For that reason v0.3 gerbers are not tested, but have just been generated after changing the silkscreen value of the input cap.
 
+# Buying
+
+I have opened up a Tindie store, carrying PCBs and DIY kits as well as 3D printed parts for this and other projects!
+
+<a href="https://www.tindie.com/stores/binary-6/?ref=offsite_badges&utm_source=sellers_Chrismettal&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
+
+
 ## What is this
 
 Small marquees for standalone decoration with backlit signs, including output for up to 25 W of RGB LED strip.
