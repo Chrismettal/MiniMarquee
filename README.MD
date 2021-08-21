@@ -53,7 +53,7 @@ The case as well as all the signs need to be 3D printed. For the signs at least 
 Soldering requires some SMD capabilities. The QFP32 chip is the hardest but with a bit of flux is actually quite doable.
 
 You don't need to change anything in the source if you are fine with the preconfigured lightscenes.
-All light scenes are hardcoded in the **LightSceneEvaluation()** function. See the commented examples to make your own scenes. ALso check out the [light scene documentation](/doc/Edit_Light_Scenes.md).
+All light scenes are hardcoded in the `LightSceneEvaluation()` function. See the commented examples to make your own scenes. Also check out the [light scene documentation](/doc/Edit_Light_Scenes.md).
 I used [PlatformIO](https://platformio.org/) on Visual Studio Code for programming. You could upload the code with the Arduino IDE but i recommend giving PlatformIO a try as you won't have to deal with the libraries etc. yourself.
 An ICSP programmer is required to upload code to the board. I used a cheap UBSTiny device but you could use an *Arduino as ISP* for example.
 
