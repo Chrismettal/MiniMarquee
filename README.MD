@@ -46,16 +46,16 @@ At the moment 15 light scenes can be hardcoded including static light ones and f
 
 **For detailed instructions, check out [the full build guide](/doc/Build_Guide.md), [how to edit light scenes](/doc/Edit_Light_Scenes.md) as well as [the troubleshooting guide](doc/Troubleshooting.md)**
 
-All the files are open source. The gerber files as well as the KiCAD project files can be found to get the PCBs made. Alternatively you can just write me. 
+All the files are open source. The gerber files as well as the KiCAD project files can be found to get the PCBs made.
 
-The case as well as all the signs need to be 3d printed. For the signs at least a 2-color extruder is required. I print all the parts in PETG because of the selection of transparent materials. The lowermost part I print in white for case internal reflections but if you only have a dual extruder setup you can print the lower and upper parts both in black and the actual logo in your color of choice.
+The case as well as all the signs need to be 3D printed. For the signs at least a 2-color extruder is required. I print all the parts in PETG because of the selection of transparent materials. The lowermost part I print in white for case internal reflections but if you only have a dual extruder setup you can print the lower and upper parts both in black and the actual logo in your color of choice.
 
 Soldering requires some SMD capabilities. The QFP32 chip is the hardest but with a bit of flux is actually quite doable.
 
 You don't need to change anything in the source if you are fine with the preconfigured lightscenes.
-All light scenes are hardcoded in the **LightSceneEvaluation()** function. See the commented examples to make your own scenes. ALso check out the [light scene documentation](https://github.com/Chrismettal/MiniMarquee/wiki/Editing-lightscenes).
+All light scenes are hardcoded in the **LightSceneEvaluation()** function. See the commented examples to make your own scenes. ALso check out the [light scene documentation](/doc/Edit_Light_Scenes.md).
 I used [PlatformIO](https://platformio.org/) on Visual Studio Code for programming. You could upload the code with the Arduino IDE but i recommend giving PlatformIO a try as you won't have to deal with the libraries etc. yourself.
-An ICSP programmer is required to upload code to the board. I used a cheap UsbTiny device but you could use an *Arduino as ISP* for example.
+An ICSP programmer is required to upload code to the board. I used a cheap UBSTiny device but you could use an *Arduino as ISP* for example.
 
 ![Open](/images/Open.jpg)
 
