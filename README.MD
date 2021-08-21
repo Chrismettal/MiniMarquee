@@ -44,7 +44,7 @@ At the moment 15 light scenes can be hardcoded including static light ones and f
 
 ## DIY
 
-**For detailed instructions, check out [the full build guide](/doc/Build_Guide.md) as well as [how to edit light scenes](/doc/Edit_Light_Scenes.md)**
+**For detailed instructions, check out [the full build guide](/doc/Build_Guide.md), [how to edit light scenes](/doc/Edit_Light_Scenes.md) as well as [the troubleshooting guide](doc/Troubleshooting.md)**
 
 All the files are open source. The gerber files as well as the KiCAD project files can be found to get the PCBs made. Alternatively you can just write me. 
 
